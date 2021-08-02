@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    </style>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" 
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" 
+    crossorigin="anonymous"></script>
+    
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <form class="container border mt-5 pb-3" action="abc.php">
+      <h2 class="pt-3 pb-3">Sign Up</h2>
+      <div class="row">
+        <!-- Username -->
+        <div class="form-group col">
+          <label for="inputUsername">User Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputUsername"
+            placeholder="Enter Username"
+          />
+          <p id="usercheck" style="color: red;" >
+            **Username is missing
+          </p>
+        </div>
+        <!-- Email -->
+        <div class="form-group col">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <!-- First Name -->
+        <div class="col">
+          <label for="fn">First Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="fn"
+            placeholder="First Name"
+          />
+          
+        </div>
+        <!-- Last Name -->
+        <div class="col">
+          <label for="ln">First Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="ln"
+            placeholder="First Name"
+          />
+          
+        </div>
+      </div>
+      <!-- Password -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          placeholder="Password"
+        />
+        <p id="passcheck" style="color: red;">
+          **Please Fill the password
+        </p>
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="form-group">
+        <label for="conpassword">Confirm Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="conpassword"
+          placeholder="Password"
+        />
+        <p id="conpasscheck" style="color: red;">
+          **Please Fill the password
+        </p>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" name="checkbox" value="check" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <!-- button -->
+        <button type="submit" id="submitbtn" class="btn btn-primary" >Submit</button>
+      
+    </form>
+
+    <script src="validation.js"></script>
+  </body>
+</html>
